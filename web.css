@@ -1,0 +1,345 @@
+*{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+html body{
+    width: 100%;
+    height: 100%;
+    position: relative;
+    padding: 0;
+    overflow-x: hidden;
+    margin: 0;
+}
+/*------nav bar-----*/
+
+.container{
+    height: 80vh;
+    width: 100%;
+    background-image: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)),url(pexels-thanh-luu-29104820-16310530.jpg);
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    background-repeat: no-repeat;
+}
+.container .navbar{
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   padding: 10px 30px;
+}
+  
+.navbar .menu-items{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+.menu-items{
+    display: flex;
+    flex-wrap: wrap;
+}
+.menu-items button{
+    background: transparent;
+    outline: none;
+    color: white;
+    border: none;
+    font-size: 1.1rem;
+    cursor: pointer;
+    margin: 0 20px;
+    position: relative;
+}
+.menu-items button:hover{
+    opacity: .5;
+}
+
+/*----center part ----*/
+
+.center-part{
+   width: 40%;
+   top: 50%;
+   left: 50%;
+    color: rgb(248, 244, 244);
+    position: absolute;
+    transform: translate(-50%, -50%);
+    font-size: 1.5rem;
+    text-align: center;
+}
+.center-part h5{
+    font-size: 1.8rem;
+    font-weight: lighter;
+    margin-bottom: 20px;
+}
+.center-part .search-box{
+    width:100%;
+    position: relative;
+    top: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 7px;
+}
+.search-box .btn1{
+    height: 40px;
+    width: 30%;
+    position: relative;
+    margin: 10px;
+    border:1px solid rgb(187, 181, 181);
+    font-weight: 600;
+    font-family:Arial, Helvetica, sans-serif;
+    border-radius: 5px;
+}
+.search-box{
+    background: rgb(255, 255, 255);
+}
+.search-box input{
+    width: 100%;
+    height: 45px;
+    border-radius: 8px;
+    border: none;
+    line-height: 40px;
+    letter-spacing: -.02em;
+    outline: none;
+    font-size: 1.2rem;
+    padding-left: 10px;
+}
+.search-box .icon i{
+   margin-right: 20px;
+}
+
+.menu-items .join{
+    background-color: white;
+    color: black;
+    height: 50px;
+    width: 70px;
+    border-radius:7px;
+}
+
+/*--mid buttons--*/
+.btn {
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    width: 100%;
+    gap: 5px;
+}
+.btn button{
+    background-color: transparent;
+    outline: none;
+    color: rgb(70, 68, 68);
+    font-size: 1.1rem;
+    justify-content: space-evenly;
+    cursor: pointer;
+    border: none;
+    padding: 10px 20px;
+    margin: 20px;
+}
+.btn .home{
+    background-color: rgb(5, 5, 5);
+    color: rgb(248, 246, 246);
+    height: 50px;
+    width: 100px;
+    border-radius:7px;
+    border-radius:25px;
+    transition: 200ms;
+} 
+.btn button:hover{
+    opacity: .7;
+}
+h2{
+    margin: 20px 0;
+    color: rgb(66, 65, 65);
+    font-size: 1.6rem;
+    margin-left: 30px;
+}
+.btn{
+    display: flex;
+    flex-wrap: wrap;
+}
+.center-btn{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 30px;
+}
+.center-btn{
+    display: flex;
+    flex-wrap: wrap;
+    flex: wrap;
+}
+.center-btn button{
+    outline: none;
+    border: 1px solid rgb(218, 215, 215);
+    height: 50px;
+    width: 130px;
+    background-color: rgba(255, 255, 255, 0.644);
+    border-radius: 6px;
+    color: black;
+    font-size: 1.2rem;
+}
+.center-btn button:hover{
+    opacity: .6;
+}
+
+
+/*images*/
+.image-container{
+    max-width: 1224px;
+    width: 90%;
+    margin: auto;
+    padding: 40px 0;
+}
+.image-container .pictures{
+    display: flex;
+    gap: 20px;
+    display: flex;
+    flex-direction: column;
+}
+.box{
+     display: flex;
+     flex-direction: row;
+     gap: 20px;
+}
+.pictures img{
+    width: 100%;
+    height: 100%;
+    border-radius: 5px;
+    object-fit: cover;
+}
+.image-container img:hover{
+    transform: scale(1.1);
+    transition: 2s;
+}
+@media screen and (max-width:768px){
+    .box{
+        flex-direction: column;
+    }
+}
+/*=====footer=====*/
+
+.content{
+    height: auto;
+    width: 100%;
+    background-color: black;
+    color:white;
+}
+footer{
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: auto;
+    padding: 60px 10%;
+    width: 100%;
+   
+}
+ul{
+    list-style: none;
+    text-decoration: none;
+}
+.footer-col{
+    width: 25%;
+    flex-direction: row;
+    justify-content: center;
+  
+}
+
+.footer-col h4{
+    position: relative;
+    margin-bottom: 30px;
+    font-weight: 600;
+    font-size:25px ;
+    
+}
+.main-content{
+    flex-direction: row;
+    justify-content: center;
+    display: flex;
+}
+.footer-col ul a{
+    color: rgb(172, 168, 168);
+    font-weight: 500;
+    font-size:20px ;
+    text-decoration: none;
+    cursor: pointer;
+}
+.footer-col p{
+    color: rgb(172, 168, 168);
+    font-weight: 500;
+    font-size:20px ;
+    margin-bottom: 10px;
+}
+.font-icons button {
+    height: 50px;
+    width: 50px;
+    border-radius: 10px;
+   background-color: none;
+}
+.font-icons button:hover{
+    opacity: .7;
+}
+.footer-col ul a:hover{
+    opacity: .4;
+}
+
+
+.content .main-content{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.content .main-content .footer-col{
+    display: flex;
+    flex-direction: column;
+    width: 32%;
+    margin: 50px ;
+}
+@media (max-width:991px){
+    .main-content{
+        width: 100%;
+        height: auto;
+    }
+}
+@media (max-width:900px) and(min-width:480px){
+    .html .body{
+       width: 100%;
+       height: 100%;
+       position: relative;
+       padding: 0;
+       overflow-x: hidden;
+       margin: 0;
+      }
+       }
+
+   /*-----nav bar----*/
+
+@media (max-width: 768px) {
+    .navbar {
+        display: none;
+        flex-direction: column;
+        width: 100%;
+        position: absolute;
+        top: 20px;
+        left: 0;
+        background-color: transparent;
+    }
+
+    .menu-items {
+        display: flex;
+    }
+
+    .menu-items button {
+        margin: 0;
+    }
+
+    .menu-items button {
+        padding: 15px;
+        border-bottom: 1px solid #575757;
+    }
+}
+
+@media screen and (max-width:1006px){
+    .btn1{
+        display:none;
+    }
+    
+}
